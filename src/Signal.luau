@@ -98,7 +98,7 @@ local function fire<T...>(self: Signal<T...>, ...: T...): ()
 	while connection do
 		if connection.active then
 			if not freeThread then freeThread = task.spawn(runner) end
-			task.spawn(freeThread, connection._callback, ...)
+			task.spawn(freeThread :: thread, connection._callback, ...)
 		end
 
 		if connection == self._tail then break end
