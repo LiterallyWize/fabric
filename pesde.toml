@@ -1,0 +1,23 @@
+name = "literallywize/fabric"
+version = "0.1.0"
+license = "MIT"
+includes = [
+	"pesde.toml",
+	"README.md",
+	"src/*",
+]
+authors = ["LiterallyWize"]
+description = "A straightforward, reactive UI framework for Roblox"
+repository = "https://github.com/LiterallyWize/fabric"
+
+[target]
+environment = "roblox"
+lib = "src/init.luau"
+build_files = ["src"]
+
+[engines]
+pesde = "^0.7.0"
+lune = "^0.10.2"
+
+[indices]
+default = "https://github.com/pesde-pkg/index"
