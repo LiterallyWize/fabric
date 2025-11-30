@@ -1,5 +1,7 @@
 --!strict
 
+local Fabric = {}
 
 
-return {}
+
+return Fabric
